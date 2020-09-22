@@ -20,8 +20,6 @@
                             <input  name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
                         <center>
-                            <input type="text" readonly value="<?php if (isset($error)) echo $error;  ?>" />
-
                             <p>¿No tienes una cuenta todavía? da click <a style="color: blue;" href="./crearCuenta.php">Aquí</a></p>
                         </center>
 

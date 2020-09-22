@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
 
 
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilosh2.css">
 </head>
 
 <body>

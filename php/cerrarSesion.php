@@ -8,7 +8,7 @@
         $_SESSION = [];
         echo "<script>
         alert('Sesión cerrada');
-        window.location.href='../ingresar.php';
+        window.location.href='../index.php';
         </script>";
     }else{
         echo "<script>

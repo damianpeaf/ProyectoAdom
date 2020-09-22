@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horarios</title>
+  <title>Productos</title>
 
 
   <!-- Optional JavaScript -->
@@ -47,6 +47,11 @@
   <main />
 
   <br>
+
+  <center>
+    <h3>Productos</h3>
+  </center>
+
   <br>
 
   <?php
@@ -59,17 +64,12 @@
   function verP($inicio)
   {
 
-
-
-
     $cn = mysqli_connect('localhost', 'root', '', 'adomicilio', '3306');
 
     $sql = mysqli_query($cn, "SELECT * FROM producto limit {$inicio}, 4");
 
     $sql2 = mysqli_query($cn, "SELECT * FROM producto");
     $numeroCampos = mysqli_num_rows($sql2);
-
-
 
     while ($res = mysqli_fetch_all($sql)) {
 

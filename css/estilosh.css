@@ -37,7 +37,7 @@
 }
 
 .navg a:hover{
-    background-color: #171152e0;
+    background-color:rgba(34,40,49, .6);
 }
 
 .text-header {
@@ -66,12 +66,12 @@
 .btn-yo{
     padding: 7px 12px;
     color: #f4f4f4;
-    background-color: #171152e0;
+    background-color: rgba(34,40,49, .6);
 }
 
 .btn-yo:hover{
     color: #f4f4f4;
-    background-color: #171152e0;
+    background-color:rgba(34,40,49, .6);
 }
 
 video{
