@@ -36,12 +36,10 @@
     </header>
 
     <?php
-    include('./inicioSesion.php');
-    include_once('./php/validacionUsuario.php');
 
-    if ($userId == null || $userId == '') {
+    if ($userId == null || $userId == '' || $_SESSION['userType'] == 3) {
         echo "<script>
-        alert('No hay ninguna sesion abierta');
+        alert('No hay ninguna sesion abierta como personal {$userId}');
         window.location.href='./index.php';
         </script>";
     }
@@ -55,16 +53,16 @@
     <hr>
 
         <div class="row row-cols-1 row-cols-md-2">
-
+        <?php if ($_SESSION['userType']!=2){?>
             <div class="col mb-4">
                 <div class="card border-primary mb-3" style="max-width: 18rem;">
                     <div class="card-header">Crear usuario</div>
                     <div class="card-body text-primary">
                         <p class="card-text">Crear Usuarios administradores o empleados</p>
-                        <button type="button" class="btn btn-outline-primary">Crear</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="window.location='./crearUsuario.php'" >Crear</button>
                     </div>
                 </div>
-
+        <?php }?>
             </div>
             <div class="col mb-4">
                 <div class="card border-success mb-3" style="max-width: 18rem;">
@@ -90,8 +88,8 @@
                 <div class="card border-warning mb-3" style="max-width: 18rem;">
                     <div class="card-header">Actualizar</div>
                     <div class="card-body text-warning">
-                        <p class="card-text">Actualizar algun dato de la descripcion o disponibilidad</p>
-                        <button type="button" class="btn btn-outline-warning">Actualizar</button>
+                        <p class="card-text">Actualizar algun dato de la descripcion o actualizar disponibilidad</p>
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
                     </div>
                 </div>
             </div>

@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) { //Chequea 
                         unset($_SESSION['contraseña']);
                         $_SESSION['userType'] = $row['idTipoUsuario'];
 
+
                         if ($_SESSION['userType'] == 1 || $_SESSION['userType'] == 2) {
 
                             echo "<script>
