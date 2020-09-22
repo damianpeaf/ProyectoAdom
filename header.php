@@ -20,7 +20,7 @@
                             <a class="dropdown-item" href="#">Vision</a>
                           </div>
                         </li>
-                        <a class="nav-item nav-link" href="#">Paquetes</a>
+                        <a class="nav-item nav-link" href="./Productos.php">Paquetes</a>
                         <a class="nav-item nav-link" href="./Horarios.php">Horario</a>
                         <a class="nav-item nav-link" href="./Contacto.php">contacto</a>
                         <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target="#formModal1" /> Iniciar sesión</button>

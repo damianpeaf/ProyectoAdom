@@ -26,13 +26,13 @@
 
 
         <?php include('header.php') ?>
-
+        
         <div class="text-header d-flex align-items-center">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
                         <p>Slogan: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, provident minima tempore laboriosam sed reiciendis impedit non deleniti dicta ad</p>
-                        <a href="" class="btn btn-yo"> <span>Ver pedidos</span> </a>
+                        <a href="" class="btn btn-yo"> <span>Ver productos</span> </a>
                     </div>
 
 
