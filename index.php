@@ -35,6 +35,8 @@
                         <a href="" class="btn btn-yo"> <span>Ver pedidos</span> </a>
                     </div>
 
+
+                    <!-- Cambiar el video poniendo la direccion del video publicitario -->
                     <video src="./videos/fondo.mp4" autoplay loop muted poster="./videos/poster.png"/>
 
                 </div>
@@ -42,6 +44,9 @@
         </div>
 
     </header>
+
+
+    <?php include('./inicioSesion.php'); ?>
     
   </body>
 </html>

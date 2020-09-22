@@ -21,6 +21,14 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/estilosh2.css">
     
+
+<style>
+
+  img{
+    max-width: 25vw;
+  }
+</style>
+
 </head>
 <body>
     
@@ -36,49 +44,47 @@
 
     <main />
 
-    <table class="table">
+    <table class="table text-center">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Sucursal</th>
-      <th scope="col">Horario</th>
- 
+      <th scope="col">Contacto</th>
+      <th scope="col">Imagen</th>
+
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">Sucursal1</th>
-      <td>
-          Lunes: 8:00 a 20:00<br>
-          Martes: 8:00 a 20:00 <br>
-          Miercoles: 8:00 a 20:00<br>
-          Jueves: 8:00 a 20:00<br>
-          Viernes: 8:00 a 20:00<br>
-          Sabado: 8:00 a 20:00<br>
-          Domingo: 8:00 a 20:00<br>
+      <td class="text-left">
+          <span class="font-weight-bold"> Correo: </span> sucursal1@empresa.com<br>
+          <span class="font-weight-bold"> Telefono: </span> 12345678 <br>
+          <span class="font-weight-bold"> Dirección: </span> 1ave 11-11 Zona 1.<br>
+        </td>
+        <td>
+          <img src="./img/sucursal-1.png" >
         </td>
     </tr>
     <tr>
       <th scope="row">Sucursal2</th>
-      <td>
-          Lunes: 8:00 a 20:00<br>
-          Martes: 8:00 a 20:00 <br>
-          Miercoles: 8:00 a 20:00<br>
-          Jueves: 8:00 a 20:00<br>
-          Viernes: 8:00 a 20:00<br>
-          Sabado: 8:00 a 20:00<br>
-          Domingo: 8:00 a 20:00<br>
+      <td class="text-left">
+          <span class="font-weight-bold"> Correo: </span> sucursal2@empresa.com<br>
+          <span class="font-weight-bold"> Telefono: </span> 12345678 <br>
+          <span class="font-weight-bold"> Dirección: </span> 1ave 11-11 Zona 1.<br>
+        </td>
+        <td>
+          <img src="./img/sucursal-1.png" >
         </td>
     </tr>
     <tr>
       <th scope="row">Sucursal3</th>
-      <td>
-          Lunes: 8:00 a 20:00<br>
-          Martes: 8:00 a 20:00 <br>
-          Miercoles: 8:00 a 20:00<br>
-          Jueves: 8:00 a 20:00<br>
-          Viernes: 8:00 a 20:00<br>
-          Sabado: 8:00 a 20:00<br>
-          Domingo: 8:00 a 20:00<br>
+      <td class="text-left">
+          <span class="font-weight-bold"> Correo: </span> sucursal3@empresa.com<br>
+          <span class="font-weight-bold"> Telefono: </span> 12345678 <br>
+          <span class="font-weight-bold"> Dirección: </span> 1ave 11-11 Zona 1.<br>
+        </td>
+        <td>
+          <img src="./img/sucursal-1.png" >
         </td>
     </tr>
   </tbody>

@@ -4,7 +4,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.php">
                       <img src="./img/icono.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                       Compañia
                     </a>
@@ -22,8 +22,8 @@
                         </li>
                         <a class="nav-item nav-link" href="#">Paquetes</a>
                         <a class="nav-item nav-link" href="./Horarios.php">Horario</a>
-                        <a class="nav-item nav-link" href="#">contacto</a>
-                        <button class="btn btn-outline-info my-2 my-sm-0" /> Iniciar sesión</button>
+                        <a class="nav-item nav-link" href="./Contacto.php">contacto</a>
+                        <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target="#formModal1" /> Iniciar sesión</button>
                       </div>
                     </div>
                   </nav>
