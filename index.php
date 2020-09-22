@@ -20,9 +20,10 @@
 
     <title>nombreproyecto</title>
   </head>
-  <body>
+  <body class="bg-dark">
    
         <header class="header">
+
 
         <?php include('header.php') ?>
 
@@ -33,6 +34,8 @@
                         <p>Slogan: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, provident minima tempore laboriosam sed reiciendis impedit non deleniti dicta ad</p>
                         <a href="" class="btn btn-yo"> <span>Ver pedidos</span> </a>
                     </div>
+
+                    <video src="./videos/fondo.mp4" autoplay loop muted poster="./videos/poster.png"/>
 
                 </div>
             </div>
