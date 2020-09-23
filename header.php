@@ -21,8 +21,8 @@
                ¿Quienes somos?
              </a>
              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">Mision</a>
-               <a class="dropdown-item" href="#">Vision</a>
+               <a class="dropdown-item" href="./mision.php  ">Mision</a>
+               <a class="dropdown-item" href="./vision.php">Vision</a>
              </div>
            </li>
            <a class="nav-item nav-link" href="./Productos.php">Paquetes</a>
