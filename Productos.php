@@ -72,8 +72,6 @@
     $numeroCampos = mysqli_num_rows($sql2);
 
     while ($res = mysqli_fetch_all($sql)) {
-
-
   ?>
 
       <div class="card-group">
