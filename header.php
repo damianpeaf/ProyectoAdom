@@ -38,8 +38,13 @@
             } else {
             ?>
 
-             <button class="btn btn-outline-info my-2 my-sm-0" onclick="window.location='./php/cerrarSesion.php' "/> Cerar sesión</button>
+             <button class="btn btn-outline-info my-2 my-sm-0" onclick="window.location='./php/cerrarSesion.php' "/> Cerrar sesión</button>
+             <?php if ($_SESSION['userType']==1 || $_SESSION['userType']==2){?>
+
+              <button class="btn btn-outline-info my-2 my-sm-0" onclick="window.location='./panel-control.php' "/> Panel de control</button>
+            
            <?php
+             }
             }
             ?>
          </div>

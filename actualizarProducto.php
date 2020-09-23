@@ -2,26 +2,41 @@
 
 require_once('./php/conexion.php');
 
-
 if (isset($_POST["btnAceptar"])) {
 
-    $correo = $_POST["email"];
-    $password = $_POST["password"];
+    $idProducto = $_POST["idProducto"];
+    $nombre = $_POST["nombre"];
+    $descripcion = $_POST["descripcion"];
+    $precio = $_POST["precio"];
+    $stock = $_POST["stock"];
 
-    if (mysqli_query($cn,"INSERT into usuario values(null, '{$correo}', '{$password}', 3)")){
+
+    if (mysqli_query($cn, "UPDATE producto SET nombre= '{$nombre}', descripcion= '{$descripcion}', precio={$precio}, stock={$stock} where idProducto={$idProducto}")) {
         echo "<script>
-                alert('Registrado Correctamente');
-                window.location.href='./index.php';
-                </script>";
-    }else{
-        echo "<script>
-                alert('Ocurrio algun error en el registro');
-                window.location.href='./index.php';
-                </script>";
+                alert('Registrado Correctamente');</script>";
+    } else {
+        echo "<script> alert('Hubo algun error en el registro ');</script>";
     }
-        
 }
 
+
+if (isset($_POST["btnActualizar"])) {
+
+    $idProducto = $_POST["idProducto"];
+
+    if ($sql = mysqli_query($cn, "SELECT * FROM producto where idProducto = {$idProducto}")) {
+        while ($res = mysqli_fetch_array($sql) ) {
+            
+            $nombre = $res[1];
+            $descripcion = $res[2];
+            $precio = $res[3];
+            $stock = $res[4];
+        }
+    }else{
+        echo "<script> alert('Registro no encontrado');</script>";
+
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +45,7 @@ if (isset($_POST["btnAceptar"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Cuenta</title>
+    <title>Actualizar producto</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -60,7 +75,15 @@ if (isset($_POST["btnAceptar"])) {
 
     <header class="header">
         <?php
-        include('header.php')
+        include('header.php');
+
+        if ($userId == null || $userId == '' || $userId == 3) {
+            echo "<script>
+                alert('No hay ninguna sesion abierta como personal');
+                window.location.href='./index.php';
+                </script>";
+        }
+
         ?>
     </header>
 
@@ -70,17 +93,31 @@ if (isset($_POST["btnAceptar"])) {
 
     <div class="bd-example">
 
-        <form action="" name="formAceptar" method="post">
+        <form action="" name="formAceptar" method="post" enctype="multipart/form-data">
             <div class="form-group mx-auto">
-                <label for="exampleInputEmail1">Correo electrónico</label>
-                <input name="email" type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Email" required>
+                <label for="exampleInputEmail1">ID</label>
+                <input class="form-control" value="<?php if (isset($idProducto)) echo $idProducto;  ?>" name="idProducto" type="text" placeholder="ID">
+            </div>
+            <div class="form-group mx-auto">
+                <label for="exampleInputEmail1">Nombre</label>
+                <input class="form-control"  value="<?php if (isset($nombre)) echo $nombre;  ?>" name="nombre" type="text" placeholder="Nombre">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Contraseña</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                <label for="exampleFormControlTextarea1">Descripcion</label>
+                <textarea class="form-control"  name="descripcion" id="exampleFormControlTextarea1" rows="3"><?php if (isset($descripcion)) echo $descripcion;  ?></textarea>
+            </div>
+            <div class="form-group mx-auto">
+                <label for="exampleInputEmail1">Precio</label>
+                <input class="form-control" value="<?php if (isset($precio)) echo $precio;  ?>" name="precio" type="text" placeholder="Precio">
+            </div>
+            <div class="form-group mx-auto">
+                <label for="exampleInputEmail1">Stock</label>
+                <input class="form-control" name="stock" value="<?php if (isset($stock)) echo $stock;  ?>" type="text" placeholder="Stock">
             </div>
             <center>
-                <button type="submit" name="btnAceptar" class="btn btn-primary">Registrarse</button>
+                <button type="submit" name="btnAceptar" class="btn btn-primary">Actualizar</button>
+                <button type="submit" name="btnActualizar" class="btn btn-primary">Buscar</button>
+
             </center>
 
     </div>

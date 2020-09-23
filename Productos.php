@@ -83,12 +83,11 @@
         ?>
 
           <div class="card">
-            <img src="./img/productos/producto-1.png" class="card-img-top">
+            <img src="<?= $res[$i][5] ?>" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title"><?= $res[$i][1] ?></h5>
               <p class="card-text">DESCRPCION: <?= $res[$i][2] ?></p>
               <p class="card-text">PRECIO: <?= $res[$i][3] ?></p>
-              <a href="#" class="btn btn-primary">Añadir al carro</a>
             </div>
             <div class="card-footer">
               <small class="text-muted">Existencias: <?= $res[$i][4] ?></small>

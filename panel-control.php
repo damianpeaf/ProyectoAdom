@@ -69,7 +69,7 @@
                     <div class="card-header">Crear Producto</div>
                     <div class="card-body text-success">
                         <p class="card-text">Ingresar producto para su visualizacion en la pagina principal</p>
-                        <button type="button" class="btn btn-outline-success">Crear</button>
+                        <button type="button" class="btn btn-outline-success" onclick="window.location='./crearProducto.php'">Crear</button>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     <div class="card-header">Eliminar</div>
                     <div class="card-body text-danger">
                         <p class="card-text">Eliminar producto para evitar que siga saliendo en la pagina principal</p>
-                        <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                        <button type="button" class="btn btn-outline-danger" onclick="window.location='./eliminarProducto.php'">Eliminar</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                     <div class="card-header">Actualizar</div>
                     <div class="card-body text-warning">
                         <p class="card-text">Actualizar algun dato de la descripcion o actualizar disponibilidad</p>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn btn-outline-warning" onclick="window.location='./actualizarProducto.php'">Actualizar</button>
                     </div>
                 </div>
             </div>

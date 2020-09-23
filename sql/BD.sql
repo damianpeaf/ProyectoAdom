@@ -25,7 +25,9 @@ create table usuario(
 
 );
 
-insert into usuario values (null, "damianpeaf@gmail.com", "123", 1);
+insert into usuario values (null, "correo1@gmail.com", "123", 1),
+						   (null, "correo2@gmail.com", "123", 2),
+                           (null, "correo3@gmail.com", "123", 3);
 
 create table producto(
 
@@ -48,4 +50,4 @@ insert into producto values (null, "Producto 1", "Lorem ipsum dolor sit amet, co
                             (null, "Producto 8", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod erat elementum fermentum blandit. Etiam feugiat finibus mollis. Interdum et.", 150.00, 5, "./img/productos/producto-1.png"),
                             (null, "Producto 9", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod erat elementum fermentum blandit. Etiam feugiat finibus mollis. Interdum et.", 150.00, 5, "./img/productos/producto-1.png");
 
-select * from usuario;
+select * from producto;
